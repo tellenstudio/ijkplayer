@@ -17,9 +17,10 @@
 #
 
 # IJK_FFMPEG_UPSTREAM=git://git.videolan.org/ffmpeg.git
-IJK_FFMPEG_UPSTREAM=https://github.com/Bilibili/FFmpeg.git
-IJK_FFMPEG_FORK=https://github.com/Bilibili/FFmpeg.git
-IJK_FFMPEG_COMMIT=ff4.0--ijk0.8.8--20210426--001
+IJK_FFMPEG_UPSTREAM=https://github.com/tellenstudio/FFmpeg.git
+IJK_FFMPEG_FORK=https://github.com/tellenstudio/FFmpeg.git
+#IJK_FFMPEG_COMMIT=ff4.0--ijk0.8.8--20210426--001
+IJK_FFMPEG_COMMIT=cronet
 IJK_FFMPEG_LOCAL_REPO=extra/ffmpeg
 
 set -e
@@ -28,22 +29,30 @@ TOOLS=tools
 git --version
 
 echo "== pull ffmpeg base =="
+echo $IJK_FFMPEG_UPSTREAM
 sh $TOOLS/pull-repo-base.sh $IJK_FFMPEG_UPSTREAM $IJK_FFMPEG_LOCAL_REPO
 
 function pull_fork()
 {
     echo "== pull ffmpeg fork $1 =="
+    echo $IJK_FFMPEG_FORK
     sh $TOOLS/pull-repo-ref.sh $IJK_FFMPEG_FORK android/contrib/ffmpeg-$1 ${IJK_FFMPEG_LOCAL_REPO}
     cd android/contrib/ffmpeg-$1
-    git checkout ${IJK_FFMPEG_COMMIT} -B ijkplayer
+    #git checkout ${IJK_FFMPEG_COMMIT} -B ijkplayer
+    echo "ffmpeg branch ${IJK_FFMPEG_COMMIT}"
+    git fetch origin
+    git checkout -f ${IJK_FFMPEG_COMMIT}
+    git pull origin ${IJK_FFMPEG_COMMIT}
+    git checkout -B ijkplayer ${IJK_FFMPEG_COMMIT}
+    git log -3
     cd -
 }
 
-pull_fork "armv5"
+#pull_fork "armv5"
 pull_fork "armv7a"
 pull_fork "arm64"
-pull_fork "x86"
-pull_fork "x86_64"
+#pull_fork "x86"
+#pull_fork "x86_64"
 
 ./init-config.sh
 ./init-android-libyuv.sh

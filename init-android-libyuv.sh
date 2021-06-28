@@ -17,8 +17,8 @@
 #
 
 
-IJK_LIBYUV_UPSTREAM=https://github.com/Bilibili/libyuv.git
-IJK_LIBYUV_FORK=https://github.com/Bilibili/libyuv.git
+IJK_LIBYUV_UPSTREAM=https://github.com/tellenstudio/libyuv.git
+IJK_LIBYUV_FORK=https://github.com/tellenstudio/libyuv.git
 IJK_LIBYUV_COMMIT=ijk-r0.2.1-dev
 IJK_LIBYUV_LOCAL_REPO=extra/libyuv
 
@@ -26,9 +26,11 @@ set -e
 TOOLS=tools
 
 echo "== pull libyuv base =="
+echo $IJK_LIBYUV_UPSTREAM
 sh $TOOLS/pull-repo-base.sh $IJK_LIBYUV_UPSTREAM $IJK_LIBYUV_LOCAL_REPO
 
 echo "== pull libyuv fork =="
+echo $IJK_LIBYUV_FORK
 sh $TOOLS/pull-repo-ref.sh $IJK_LIBYUV_FORK ijkmedia/ijkyuv ${IJK_LIBYUV_LOCAL_REPO}
 cd ijkmedia/ijkyuv
 git checkout ${IJK_LIBYUV_COMMIT}
