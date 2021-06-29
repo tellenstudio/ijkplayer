@@ -6,9 +6,9 @@
 
 ### 编译develop分支
 	git fetch origin
-	git checkout -f develop
-	git pull origin develop
-	git checkout -B latest develop
+	git checkout -f cronet
+	git pull origin cronet
+	git checkout -B latest cronet
 
 ### 配置ndk路径
 	export ANDROID_NDK=/path/android-ndk-r13b
