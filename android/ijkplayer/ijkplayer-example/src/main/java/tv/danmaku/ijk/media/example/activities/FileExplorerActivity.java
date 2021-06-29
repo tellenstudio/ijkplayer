@@ -24,6 +24,8 @@ import android.text.TextUtils;
 
 import com.squareup.otto.Subscribe;
 
+import org.chromium.base.ContextUtils;
+
 import java.io.File;
 import java.io.IOException;
 
@@ -39,6 +41,9 @@ public class FileExplorerActivity extends AppActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        // add cronet support
+        ContextUtils.initApplicationContext(this.getBaseContext());
 
         if (mSettings == null) {
             mSettings = new Settings(this);

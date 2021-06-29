@@ -10,6 +10,7 @@
     <item
         android:id="@+id/action_recent"
         android:title="@string/recent"
+        android:visible="false"
         app:showAsAction="ifRoom" />
     <item
         android:id="@+id/action_settings"

@@ -129,20 +129,118 @@ public class SampleMediaListFragment extends Fragment {
                 "    ]\n" +
                 "}";
 
-        mAdapter.addItem(manifest_string, "las test");
+//        mAdapter.addItem(manifest_string, "las test");
+//        mAdapter.addItem("http://devimages.apple.com.edgekey.net/streaming/examples/bipbop_4x3/bipbop_4x3_variant.m3u8", "bipbop basic master playlist");
+//        mAdapter.addItem("http://devimages.apple.com.edgekey.net/streaming/examples/bipbop_4x3/gear1/prog_index.m3u8", "bipbop basic 400x300 @ 232 kbps");
+//        mAdapter.addItem("http://devimages.apple.com.edgekey.net/streaming/examples/bipbop_4x3/gear2/prog_index.m3u8", "bipbop basic 640x480 @ 650 kbps");
+//        mAdapter.addItem("http://devimages.apple.com.edgekey.net/streaming/examples/bipbop_4x3/gear3/prog_index.m3u8", "bipbop basic 640x480 @ 1 Mbps");
+//        mAdapter.addItem("http://devimages.apple.com.edgekey.net/streaming/examples/bipbop_4x3/gear4/prog_index.m3u8", "bipbop basic 960x720 @ 2 Mbps");
+//        mAdapter.addItem("http://devimages.apple.com.edgekey.net/streaming/examples/bipbop_4x3/gear0/prog_index.m3u8", "bipbop basic 22.050Hz stereo @ 40 kbps");
+//        mAdapter.addItem("http://devimages.apple.com.edgekey.net/streaming/examples/bipbop_16x9/bipbop_16x9_variant.m3u8", "bipbop advanced master playlist");
+//        mAdapter.addItem("http://devimages.apple.com.edgekey.net/streaming/examples/bipbop_16x9/gear1/prog_index.m3u8", "bipbop advanced 416x234 @ 265 kbps");
+//        mAdapter.addItem("http://devimages.apple.com.edgekey.net/streaming/examples/bipbop_16x9/gear2/prog_index.m3u8", "bipbop advanced 640x360 @ 580 kbps");
+//        mAdapter.addItem("http://devimages.apple.com.edgekey.net/streaming/examples/bipbop_16x9/gear3/prog_index.m3u8", "bipbop advanced 960x540 @ 910 kbps");
+//        mAdapter.addItem("http://devimages.apple.com.edgekey.net/streaming/examples/bipbop_16x9/gear4/prog_index.m3u8", "bipbop advanced 1289x720 @ 1 Mbps");
+//        mAdapter.addItem("http://devimages.apple.com.edgekey.net/streaming/examples/bipbop_16x9/gear5/prog_index.m3u8", "bipbop advanced 1920x1080 @ 2 Mbps");
+//        mAdapter.addItem("http://devimages.apple.com.edgekey.net/streaming/examples/bipbop_16x9/gear0/prog_index.m3u8", "bipbop advanced 22.050Hz stereo @ 40 kbps");
+
+        mAdapter.addItem("http://cctvalih5ca.v.myalicdn.com/live/cctv1_2/index.m3u8", "CCTV1");
+        mAdapter.addItem("cronet://cctvalih5ca.v.myalicdn.com/live/cctv1_2/index.m3u8", "CCTV1");
+        mAdapter.addItem("http://ivi.bupt.edu.cn/hls/cctv1hd.m3u8", "CCTV1-HD");
+        mAdapter.addItem("cronet://ivi.bupt.edu.cn/hls/cctv1hd.m3u8", "CCTV1-HD");
+        mAdapter.addItem("http://cctvalih5ca.v.myalicdn.com/live/cctv2_2/index.m3u8", "CCTV2");
+        mAdapter.addItem("cronet://cctvalih5ca.v.myalicdn.com/live/cctv2_2/index.m3u8", "CCTV2");
+        mAdapter.addItem("http://cctvalih5ca.v.myalicdn.com/live/cctv3_2/index.m3u8", "CCTV3");
+        mAdapter.addItem("cronet://cctvalih5ca.v.myalicdn.com/live/cctv3_2/index.m3u8", "CCTV3");
+        mAdapter.addItem("http://ivi.bupt.edu.cn/hls/cctv3hd.m3u8", "CCTV3-HD");
+        mAdapter.addItem("cronet://ivi.bupt.edu.cn/hls/cctv3hd.m3u8", "CCTV3-HD");
+        mAdapter.addItem("http://cctvalih5ca.v.myalicdn.com/live/cctv4_2/index.m3u8", "CCTV4");
+        mAdapter.addItem("cronet://cctvalih5ca.v.myalicdn.com/live/cctv4_2/index.m3u8", "CCTV4");
+        mAdapter.addItem("http://cctvalih5ca.v.myalicdn.com/live/cctv5_2/index.m3u8", "CCTV5");
+        mAdapter.addItem("cronet://cctvalih5ca.v.myalicdn.com/live/cctv5_2/index.m3u8", "CCTV5");
+        mAdapter.addItem("http://ivi.bupt.edu.cn/hls/cctv5phd.m3u8", "CCTV5+-HD");
+        mAdapter.addItem("cronet://ivi.bupt.edu.cn/hls/cctv5phd.m3u8", "CCTV5+-HD");
+        mAdapter.addItem("http://cctvalih5ca.v.myalicdn.com/live/cctv6_2/index.m3u8", "CCTV6");
+        mAdapter.addItem("cronet://cctvalih5ca.v.myalicdn.com/live/cctv6_2/index.m3u8", "CCTV6");
+        mAdapter.addItem("http://ivi.bupt.edu.cn/hls/cctv6hd.m3u8", "CCTV6-HD");
+        mAdapter.addItem("cronet://ivi.bupt.edu.cn/hls/cctv6hd.m3u8", "CCTV6-HD");
+        mAdapter.addItem("http://cctvalih5ca.v.myalicdn.com/live/cctv8_2/index.m3u8", "CCTV8");
+        mAdapter.addItem("cronet://cctvalih5ca.v.myalicdn.com/live/cctv8_2/index.m3u8", "CCTV8");
+        mAdapter.addItem("http://ivi.bupt.edu.cn/hls/cctv8hd.m3u8", "CCTV8-HD");
+        mAdapter.addItem("cronet://ivi.bupt.edu.cn/hls/cctv8hd.m3u8", "CCTV8-HD");
+        mAdapter.addItem("http://cctvalih5ca.v.myalicdn.com/live/cctv13_2/index.m3u8", "CCTV13");
+        mAdapter.addItem("cronet://cctvalih5ca.v.myalicdn.com/live/cctv13_2/index.m3u8", "CCTV13");
+        mAdapter.addItem("http://ivi.bupt.edu.cn/hls/chchd.m3u8", "CHC-HD电影");
+        mAdapter.addItem("cronet://ivi.bupt.edu.cn/hls/chchd.m3u8", "CHC-HD电影");
+        mAdapter.addItem("http://ivi.bupt.edu.cn/hls/btv1hd.m3u8", "北京卫视-HD");
+        mAdapter.addItem("cronet://ivi.bupt.edu.cn/hls/btv1hd.m3u8", "北京卫视-HD");
+        mAdapter.addItem("http://ivi.bupt.edu.cn/hls/btv2hd.m3u8", "北京文艺-HD");
+        mAdapter.addItem("cronet://ivi.bupt.edu.cn/hls/btv2hd.m3u8", "北京文艺-HD");
+        mAdapter.addItem("http://ivi.bupt.edu.cn/hls/btv11hd.m3u8", "北京体育-HD");
+        mAdapter.addItem("cronet://ivi.bupt.edu.cn/hls/btv11hd.m3u8", "北京体育-HD");
+        mAdapter.addItem("http://ivi.bupt.edu.cn/hls/hunanhd.m3u8", "湖南卫视-HD");
+        mAdapter.addItem("cronet://ivi.bupt.edu.cn/hls/hunanhd.m3u8", "湖南卫视-HD");
+        mAdapter.addItem("http://ivi.bupt.edu.cn/hls/zjhd.m3u8", "浙江卫视-HD");
+        mAdapter.addItem("cronet://ivi.bupt.edu.cn/hls/zjhd.m3u8", "浙江卫视-HD");
+        mAdapter.addItem("http://ivi.bupt.edu.cn/hls/jshd.m3u8", "江苏卫视-HD");
+        mAdapter.addItem("cronet://ivi.bupt.edu.cn/hls/jshd.m3u8", "江苏卫视-HD");
+        mAdapter.addItem("http://ivi.bupt.edu.cn/hls/dfhd.m3u8", "东方卫视-HD");
+        mAdapter.addItem("cronet://ivi.bupt.edu.cn/hls/dfhd.m3u8", "东方卫视-HD");
+        mAdapter.addItem("http://ivi.bupt.edu.cn/hls/ahhd.m3u8", "安徽卫视-HD");
+        mAdapter.addItem("cronet://ivi.bupt.edu.cn/hls/ahhd.m3u8", "安徽卫视-HD");
+        mAdapter.addItem("http://ivi.bupt.edu.cn/hls/hljhd.m3u8", "黑龙江卫视-HD");
+        mAdapter.addItem("cronet://ivi.bupt.edu.cn/hls/hljhd.m3u8", "黑龙江卫视-HD");
+        mAdapter.addItem("http://ivi.bupt.edu.cn/hls/lnhd.m3u8", "辽宁卫视-HD");
+        mAdapter.addItem("cronet://ivi.bupt.edu.cn/hls/lnhd.m3u8", "辽宁卫视-HD");
+        mAdapter.addItem("http://ivi.bupt.edu.cn/hls/szhd.m3u8", "深圳卫视-HD");
+        mAdapter.addItem("cronet://ivi.bupt.edu.cn/hls/szhd.m3u8", "深圳卫视-HD");
+        mAdapter.addItem("http://ivi.bupt.edu.cn/hls/gdhd.m3u8", "广东卫视-HD");
+        mAdapter.addItem("cronet://ivi.bupt.edu.cn/hls/gdhd.m3u8", "广东卫视-HD");
+        mAdapter.addItem("http://ivi.bupt.edu.cn/hls/tjhd.m3u8", "天津卫视-HD");
+        mAdapter.addItem("cronet://ivi.bupt.edu.cn/hls/tjhd.m3u8", "天津卫视-HD");
+        mAdapter.addItem("http://ivi.bupt.edu.cn/hls/hbhd.m3u8", "湖北卫视-HD");
+        mAdapter.addItem("cronet://ivi.bupt.edu.cn/hls/hbhd.m3u8", "湖北卫视-HD");
+        mAdapter.addItem("http://ivi.bupt.edu.cn/hls/sdhd.m3u8", "山东卫视-HD");
+        mAdapter.addItem("cronet://ivi.bupt.edu.cn/hls/sdhd.m3u8", "山东卫视-HD");
+        mAdapter.addItem("http://vfx.mtime.cn/Video/2019/02/04/mp4/190204084208765161.mp4", "驯龙高手");
+        mAdapter.addItem("cronet://vfx.mtime.cn/Video/2019/02/04/mp4/190204084208765161.mp4", "驯龙高手");
+        mAdapter.addItem("http://vfx.mtime.cn/Video/2019/03/19/mp4/190319222227698228.mp4", "紧急救援");
+        mAdapter.addItem("cronet://vfx.mtime.cn/Video/2019/03/19/mp4/190319222227698228.mp4", "紧急救援");
+        mAdapter.addItem("http://vfx.mtime.cn/Video/2019/03/19/mp4/190319212559089721.mp4", "玩具总动员");
+        mAdapter.addItem("cronet://vfx.mtime.cn/Video/2019/03/19/mp4/190319212559089721.mp4", "玩具总动员");
+        mAdapter.addItem("http://vfx.mtime.cn/Video/2019/03/18/mp4/190318231014076505.mp4", "叶问4预告片");
+        mAdapter.addItem("cronet://vfx.mtime.cn/Video/2019/03/18/mp4/190318231014076505.mp4", "叶问4预告片");
         mAdapter.addItem("http://devimages.apple.com.edgekey.net/streaming/examples/bipbop_4x3/bipbop_4x3_variant.m3u8", "bipbop basic master playlist");
+        mAdapter.addItem("cronet://devimages.apple.com.edgekey.net/streaming/examples/bipbop_4x3/bipbop_4x3_variant.m3u8", "bipbop basic master playlist");
         mAdapter.addItem("http://devimages.apple.com.edgekey.net/streaming/examples/bipbop_4x3/gear1/prog_index.m3u8", "bipbop basic 400x300 @ 232 kbps");
+        mAdapter.addItem("cronet://devimages.apple.com.edgekey.net/streaming/examples/bipbop_4x3/gear1/prog_index.m3u8", "bipbop basic 400x300 @ 232 kbps");
         mAdapter.addItem("http://devimages.apple.com.edgekey.net/streaming/examples/bipbop_4x3/gear2/prog_index.m3u8", "bipbop basic 640x480 @ 650 kbps");
+        mAdapter.addItem("cronet://devimages.apple.com.edgekey.net/streaming/examples/bipbop_4x3/gear2/prog_index.m3u8", "bipbop basic 640x480 @ 650 kbps");
         mAdapter.addItem("http://devimages.apple.com.edgekey.net/streaming/examples/bipbop_4x3/gear3/prog_index.m3u8", "bipbop basic 640x480 @ 1 Mbps");
+        mAdapter.addItem("cronet://devimages.apple.com.edgekey.net/streaming/examples/bipbop_4x3/gear3/prog_index.m3u8", "bipbop basic 640x480 @ 1 Mbps");
         mAdapter.addItem("http://devimages.apple.com.edgekey.net/streaming/examples/bipbop_4x3/gear4/prog_index.m3u8", "bipbop basic 960x720 @ 2 Mbps");
+        mAdapter.addItem("cronet://devimages.apple.com.edgekey.net/streaming/examples/bipbop_4x3/gear4/prog_index.m3u8", "bipbop basic 960x720 @ 2 Mbps");
         mAdapter.addItem("http://devimages.apple.com.edgekey.net/streaming/examples/bipbop_4x3/gear0/prog_index.m3u8", "bipbop basic 22.050Hz stereo @ 40 kbps");
+        mAdapter.addItem("cronet://devimages.apple.com.edgekey.net/streaming/examples/bipbop_4x3/gear0/prog_index.m3u8", "bipbop basic 22.050Hz stereo @ 40 kbps");
         mAdapter.addItem("http://devimages.apple.com.edgekey.net/streaming/examples/bipbop_16x9/bipbop_16x9_variant.m3u8", "bipbop advanced master playlist");
+        mAdapter.addItem("cronet://devimages.apple.com.edgekey.net/streaming/examples/bipbop_16x9/bipbop_16x9_variant.m3u8", "bipbop advanced master playlist");
         mAdapter.addItem("http://devimages.apple.com.edgekey.net/streaming/examples/bipbop_16x9/gear1/prog_index.m3u8", "bipbop advanced 416x234 @ 265 kbps");
+        mAdapter.addItem("cronet://devimages.apple.com.edgekey.net/streaming/examples/bipbop_16x9/gear1/prog_index.m3u8", "bipbop advanced 416x234 @ 265 kbps");
         mAdapter.addItem("http://devimages.apple.com.edgekey.net/streaming/examples/bipbop_16x9/gear2/prog_index.m3u8", "bipbop advanced 640x360 @ 580 kbps");
+        mAdapter.addItem("cronet://devimages.apple.com.edgekey.net/streaming/examples/bipbop_16x9/gear2/prog_index.m3u8", "bipbop advanced 640x360 @ 580 kbps");
         mAdapter.addItem("http://devimages.apple.com.edgekey.net/streaming/examples/bipbop_16x9/gear3/prog_index.m3u8", "bipbop advanced 960x540 @ 910 kbps");
+        mAdapter.addItem("cronet://devimages.apple.com.edgekey.net/streaming/examples/bipbop_16x9/gear3/prog_index.m3u8", "bipbop advanced 960x540 @ 910 kbps");
         mAdapter.addItem("http://devimages.apple.com.edgekey.net/streaming/examples/bipbop_16x9/gear4/prog_index.m3u8", "bipbop advanced 1289x720 @ 1 Mbps");
+        mAdapter.addItem("cronet://devimages.apple.com.edgekey.net/streaming/examples/bipbop_16x9/gear4/prog_index.m3u8", "bipbop advanced 1289x720 @ 1 Mbps");
         mAdapter.addItem("http://devimages.apple.com.edgekey.net/streaming/examples/bipbop_16x9/gear5/prog_index.m3u8", "bipbop advanced 1920x1080 @ 2 Mbps");
+        mAdapter.addItem("cronet://devimages.apple.com.edgekey.net/streaming/examples/bipbop_16x9/gear5/prog_index.m3u8", "bipbop advanced 1920x1080 @ 2 Mbps");
         mAdapter.addItem("http://devimages.apple.com.edgekey.net/streaming/examples/bipbop_16x9/gear0/prog_index.m3u8", "bipbop advanced 22.050Hz stereo @ 40 kbps");
+        mAdapter.addItem("cronet://devimages.apple.com.edgekey.net/streaming/examples/bipbop_16x9/gear0/prog_index.m3u8", "bipbop advanced 22.050Hz stereo @ 40 kbps");
+        mAdapter.addItem("http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4", "big_buck_bunny.mp4");
+        mAdapter.addItem("cronet://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4", "big_buck_bunny.mp4");
+        mAdapter.addItem("http://vjs.zencdn.net/v/oceans.mp4", "oceans.mp4");
+        mAdapter.addItem("cronet://vjs.zencdn.net/v/oceans.mp4", "oceans.mp4");
+
     }
 
     final class SampleMediaItem {
@@ -186,7 +284,12 @@ public class SampleMediaListFragment extends Fragment {
 
             SampleMediaItem item = getItem(position);
             viewHolder.mNameTextView.setText(item.mName);
-            viewHolder.mUrlTextView.setText(item.mUrl);
+//            viewHolder.mUrlTextView.setText(item.mUrl);
+
+            String strText = item.mUrl.substring(0, item.mUrl.indexOf("://"));
+            strText = "<" + strText + ">";
+//            viewHolder.mUrlTextView.setText(item.mUrl);
+            viewHolder.mUrlTextView.setText(strText);
 
             return view;
         }
